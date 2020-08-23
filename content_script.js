@@ -12,6 +12,7 @@ function main(e) {
             if(limit_value.substr(limit_value.length-5, 5) === "00:00"){
                 limit_value = limit_value.substr(0, limit_value.length-5);
                 limit_value += "23:59";
+                limit.innerHTML = limit_value;
             }
         };
     }
