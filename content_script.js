@@ -19,9 +19,9 @@ function main(e) {
                     }
                 }
 
-                if(limit_value.substr(10, 1) === "0") {
-                    if(limit_value.substr(11, 1) != 0) {
-                        limit_value = limit_value.substr(0, 11) + (limit_value.substr(11, 1)-1) + limit_value.substr(12, limit_value.length-12);
+                if(limit_value.substr(limit_value.length-14, 1) === " ") {
+                    if(limit_value.substr(limit_value.length-13, 1) != 0) {
+                        limit_value = limit_value.substr(0, limit_value.length-13) + (limit_value.substr(limit_value.length-13, 1)-1) + limit_value.substr(1limit_value.length-12, 12);
                     }else{
 
                     }
