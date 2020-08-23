@@ -1,3 +1,1 @@
-window.onload = function(){
-    alert("hello");
-}
+$("body").prepend('<div class="txt>Hello World!</div>');
