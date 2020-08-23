@@ -13,7 +13,7 @@ function main(e) {
                 limit_value += "23:59";
                 let days = ["月", "火", "水", "木", "金", "土", "日"];
                 for(let i = 0; i < 7; ++i){
-                    if(limit_value.substr(14, 1) === days[i]){
+                    if(limit_value.substr(limit_value.length-10, 1) === days[i]){
                         limit_value = limit_value.replace(days[i], days[(i+6)%7]);
                         break;
                     }
