@@ -6,7 +6,7 @@
     "content_scripts": [
         {
         "matches": ["http://mikage32.github.io/*"],
-        "js": ["common.js"]
+        "js": ["jquery-3.5.1.min.js", "content_script.js"]
         }
     ],
     "homepage_url": "http://mikage32.github.io"
