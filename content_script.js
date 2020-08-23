@@ -5,7 +5,7 @@ function main(e) {
     function jsLoaded() {
         if (document.querySelectorAll('td.cell.c1.lastcol').length >= 3) {
             clearInterval(jsInitCheckTimer);
-            var limit = document.querySelectorAll('td.cell.c1.lastcol')[2];
+            var limit = document.querySelectorAll('td.cell.c1.lastcol')[2].innerHTML;
             console.log(limit);
         };
     }
