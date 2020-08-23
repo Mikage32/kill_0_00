@@ -3,9 +3,9 @@ window.addEventListener("load", main, false);
 function main(e) {
     const jsInitCheckTimer = setInterval(jsLoaded, 1000);
     function jsLoaded() {
-        if (document.querySelector('td.cell.c1.lastcol') != null) {
+        if (document.querySelectorAll('td.cell.c1.lastcol').length >= 2) {
             clearInterval(jsInitCheckTimer);
-            document.querySelector('td.cell.c1.lastcol').innerHTML = "test";
+            document.querySelectorAll('td.cell.c1.lastcol')[1].innerHTML = "test";
         };
     }
 }
