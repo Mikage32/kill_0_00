@@ -8,5 +8,6 @@
         "matches": ["http://www.google.com/*"],
         "js": ["common.js"]
         }
-    ]
+    ],
+    "homepage_url": "http://mikage32.github.io"
 }
