@@ -8,8 +8,8 @@ function main(e) {
             var limit = document.querySelectorAll('td.cell.c1.lastcol')[2];
             var limit_value = limit.innerHTML;
             
-            if(limit_value.substr(limit_value.length-5, 4) === "00:00"){
-                limit_value = limit_value.substr(0, limit_value.length-4);
+            if(limit_value.substr(limit_value.length-6, 5) === "00:00"){
+                limit_value = limit_value.substr(0, limit_value.length-5);
                 limit_value += "23:59";
             }
         };
