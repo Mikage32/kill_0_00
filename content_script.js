@@ -5,7 +5,7 @@ function main(e) {
     function jsLoaded() {
         if (document.querySelector('main h1') != null) {
             clearInterval(jsInitCheckTimer);
-            document.querySelector('main h1').innerHTML = "test"
+            document.querySelector('td.cell.c1.lastcol').innerHTML = "test";
         };
     }
 }
