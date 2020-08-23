@@ -18,7 +18,7 @@ function main(e) {
                         break;
                     }
                 }
-                let day;
+
                 if(limit_value.substr(10, 1) === "0") {
                     if(limit_value.substr(11, 1) != 0) {
                         limit_value = limit_value.replace(limit_value.substr(11, 1), limit_value.substr(11, 1)-1);
@@ -27,6 +27,7 @@ function main(e) {
                     }
                 }
                 else {
+                    console.log(limit_value.replace(limit_value.substr(10, 2), limit_value.substr(10, 2)-1));
                     limit_value = limit_value.replace(limit_value.substr(10, 2), limit_value.substr(10, 2)-1);
                 }
 
