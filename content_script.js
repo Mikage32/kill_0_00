@@ -8,7 +8,7 @@ function main(e) {
         if (document.querySelector('main h1') != null) {
             clearInterval(jsInitCheckTimer);
             var title = document.querySelector('main h1');
-            console.log(x);
+            console.log(title);
         };
     }
 }
