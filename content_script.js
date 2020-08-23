@@ -5,7 +5,7 @@ function main(e) {
     function jsLoaded() {
         if (document.querySelector('main h1') != null) {
             clearInterval(jsInitCheckTimer);
-            document.querySelector('main h1').innerHTML = "<h1>test</h1>"
+            document.querySelector('main h1').innerHTML = "test"
         };
     }
 }
