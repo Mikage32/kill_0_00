@@ -1,1 +1,1 @@
-alert("test");
+onload(alert("test"));
