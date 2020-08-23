@@ -13,10 +13,8 @@ function main(e) {
                 limit_value += "23:59";
                 let day = ["月", "火", "水", "木", "金", "土", "日"];
                 for(let i = 0; i < 7; ++i){
-                    console.log(day[i]);
-                    console.log(limit_value.substr(14, 1) === day[i]);
                     if(limit_value.substr(14, 1) === day[i]){
-                        limit_value.replace(day[i], day[(i+6)%7]);
+                        limit_value.replace(day[i], day[(i+1)%7]);
                         break;
                     }
                 }
