@@ -21,14 +21,13 @@ function main(e) {
 
                 if(limit_value.substr(10, 1) === "0") {
                     if(limit_value.substr(11, 1) != 0) {
-                        limit_value = limit_value.replace(limit_value.substr(11, 1), limit_value.substr(11, 1)-1);
+                        limit_value = limit_value.substr(0, 11) + (limit_value.substr(11, 1)-1) + limit_value.substr(12, limit_value.length-12);
                     }else{
 
                     }
                 }
                 else {
-                    console.log(limit_value.replace(limit_value.substr(10, 2), limit_value.substr(10, 2)-1));
-                    limit_value = limit_value.replace(limit_value.substr(10, 2), limit_value.substr(10, 2)-1);
+                    limit_value = limit_value.substr(0, 10) + (limit_value.substr(10, 2)-1) + limit_value.substr(12, limit_value.length-12);
                 }
 
                 limit.innerHTML = limit_value;
