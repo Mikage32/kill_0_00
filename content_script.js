@@ -12,6 +12,14 @@ function main(e) {
             if(limit_value.substr(limit_value.length-5, 5) === "00:00"){
                 limit_value = limit_value.substr(0, limit_value.length-5);
                 limit_value += "23:59";
+                let day = ["月", "火", "水", "木", "金", "土", "日"];
+                for(let i = 0; i < 7; ++i){
+                    if(limit_value.substr(12, 1) === day[i]){
+                        limit_value.replace(day[i], day[(i+6)%7]);
+                        break;
+                    }
+                }
+
                 limit.innerHTML = limit_value;
             }
         };
