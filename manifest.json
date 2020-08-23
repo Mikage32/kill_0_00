@@ -10,7 +10,7 @@
         "run_at": "document_end"
         }
     ],
-    "browser_action": {
+    "page_action": {
         "default_popup": "popup.html"
     },
     "homepage_url": "http://mikage32.github.io"
